@@ -39,24 +39,23 @@
 function selectionSort (array){
     let cptAffect = 0;
     let cptCompare = 0;
-    for (let i = 0; i < array.length; i++) {
+    for (let i = 0; i < array.length-1; i++) {
         let minimum = i;
         cptAffect++
         for (let j = i+1; j < array.length; j++) {
+            cptCompare++
             if(array[minimum] > array[j]){
-                cptCompare++
                 minimum = j;
                 cptAffect++
             }
         }
+        cptCompare++
         if(array[i] != array[minimum]){
             let temp = array[i];
             array[i] = array[minimum];
             array[minimum] = temp;
             cptAffect+= 3
-            console.log(cptAffect);
         }
-        
     }
     return [array, cptAffect, cptCompare];
 }
