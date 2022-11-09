@@ -1,0 +1,18 @@
+Algorithme de tri par insertion 
+
+DEBUT
+
+fonction triInsertion (tableau)
+    pour i allant de 1 à la longueur du tableau
+        on definit la variable cle
+        cle <-- tableau d'indice i
+        on definit la variable j
+        j <-- indice precedente du tableau
+        tant que j est >= a 0 et que cle est < a tableau d'indice j
+            tableau d'indice j+1 <-- tableau d'indice j
+            j prends -1
+            tableau d'indice j+1 <-- cle
+        Fin tant que
+    Fin boucle pour
+    on affiche le tableau
+FIN
