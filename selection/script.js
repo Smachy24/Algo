@@ -2,21 +2,24 @@
 
     Tri selection (tableau) :
         On déclare une variable minimum
-        On parcours le tableau:
+        On parcours le tableau -1:
 
             mini <- index de l'élément actuel
             On re parcours le tableau :
 
                 si tableau[mini] > tableau[mini+1] :
                     mini <- mini+1
+                Fin de si
 
             Fin du parcours
 
-            échange de l'élément actuel du tableau avec tableau[minimum]
+            Si l'élément actuel est différent de tabeleau[mini] :
+                échange de l'élément actuel du tableau avec tableau[mini]
+            Fin de si
 
         Fin du parcours
 
-        On renvoie le tableau trié
+        On affiche le tableau trié
 
     Fin du tri.
 
@@ -37,42 +40,25 @@
 */
 
 function selectionSort (array){
-    let cptAffect = 0;
-    let cptCompare = 0;
+    let cpt = 0;
     for (let i = 0; i < array.length-1; i++) {
         let minimum = i;
-        cptAffect++
+        cpt++
         for (let j = i+1; j < array.length; j++) {
-            cptCompare++
+            cpt++
             if(array[minimum] > array[j]){
                 minimum = j;
-                cptAffect++
+                cpt++
             }
         }
-        cptCompare++
+        cpt++
         if(array[i] != array[minimum]){
             let temp = array[i];
             array[i] = array[minimum];
             array[minimum] = temp;
-            cptAffect+= 3
+            cpt+= 3
         }
     }
-    return [array, cptAffect, cptCompare];
-}
-
-/* ========== Méthodes stats =========== */
-
-function stats (min, max, step, nbr){
-    let stepCpt = 0;
-    for (let i = 0; i <= nbr; i++) {
-        let array = [];
-        for (let j = 0; j < Math.floor(Math.random() * (max-min) + min + stepCpt); j++) {
-            let randomNumber = Math.floor(Math.random() * 100);
-            array.push(randomNumber);
-            stepCpt+= step;
-        }
-
-    }
-
-
+    console.log(array);
+    return cpt;
 }
