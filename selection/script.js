@@ -37,21 +37,28 @@
 */
 
 function selectionSort (array){
-    let cpt = 0;
+    let cptAffect = 0;
+    let cptCompare = 0;
     for (let i = 0; i < array.length; i++) {
         let minimum = i;
+        cptAffect++
         for (let j = i+1; j < array.length; j++) {
             if(array[minimum] > array[j]){
+                cptCompare++
                 minimum = j;
-                cpt++
+                cptAffect++
             }
         }
-        let temp = array[i];
-        array[i] = array[minimum];
-        array[minimum] = temp;
-        cpt+= 3
+        if(array[i] != array[minimum]){
+            let temp = array[i];
+            array[i] = array[minimum];
+            array[minimum] = temp;
+            cptAffect+= 3
+            console.log(cptAffect);
+        }
+        
     }
-    return [array, cpt];
+    return [array, cptAffect, cptCompare];
 }
 
 /* ========== Méthodes stats =========== */
