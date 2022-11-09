@@ -14,5 +14,5 @@ fonction triInsertion (tableau)
             tableau d'indice j+1 <-- cle
         Fin tant que
     Fin boucle pour
-    on retourne le tableau
+    on affiche le tableau
 FIN
