@@ -1,0 +1,31 @@
+DEBUT
+
+Fonction tri_bulle(tab)
+    Pour i allant de 0 à taille du tab
+        Pour j allant de 0 à taille du tab-1
+            Si tab d’indice j > à tab d’indice j+1
+                Permuter les valeurs tab d’indice j et tab d’indice j+1
+            Fin si
+        Fin pour
+    Fin pour
+    On renvoie tab
+FIN
+
+DEBUT
+
+Fonction tri_bulle_optimise(tab)
+    Declarer variable stop
+    stop <- Vrai
+    Pour i allant de 0 à taille du tab
+        Pour j allant de 0 à taille du tab-1
+            Si tab d’indice j > à tab d’indice j+1
+                Permuter les valeurs tab d’indice j et tab d’indice j+1
+                stop <- Faux
+            Fin si
+        Fin pour
+        Si stop = Vrai
+            Casser la boucle
+        Fin si
+    Fin pour
+    On renvoie tab
+FIN
