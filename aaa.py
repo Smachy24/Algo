@@ -17,9 +17,7 @@ def triInsertion(t):
             affec += 5 
     print('Voici le nombre de comparaisons effectuées :', comp)
     print("Voici le nombre d'affectations effectuées :", affec)
-    
-#t = [randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50)]
-t = [9 ,8 ,7 ,6 ,5 ,4, 3, 2, 1, 0]
+    return t
+t = [randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50)]
 
-triInsertion(t)
-print (t)
+print(triInsertion(t))
