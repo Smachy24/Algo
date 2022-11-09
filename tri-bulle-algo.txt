@@ -8,7 +8,7 @@ Fonction tri_bulle(tab)
             Fin si
         Fin pour
     Fin pour
-    On renvoie tab
+    Afficher tab
 FIN
 
 DEBUT
@@ -27,5 +27,5 @@ Fonction tri_bulle_optimise(tab)
             Casser la boucle
         Fin si
     Fin pour
-    On renvoie tab
+    Afficher tab
 FIN
