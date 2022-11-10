@@ -20,18 +20,3 @@ Tri selection (tableau) :
     On affiche le tableau trié
 
 Fin du tri.
-
-Test : 
-    (entré) tableau = [3, 10, 1, 8, 2, 4, 5, 10, 3]
-    selection(tableau)
-    >>> (sortie) [1,2,3,3,4,5,8,10,10]
-
-Dans le meilleur des cas :
-    tableau = [1,2,3,4,5,6,7,8,10,9]
-    selection(tableau)
-    >>> [1,2,3,4,5,6,7,8,9,10] en 41 opérations
-    
-Dans le pire des cas : 
-    tableau = [10,9,8,7,6,5,4,3,2,1]
-    selection(tableau)
-    >>> [1,2,3,4,5,6,7,8,9,10] en 65 opérations

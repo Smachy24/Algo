@@ -1,5 +1,3 @@
-from random import *
-
 def triInsertion(t):
     comp = 0
     for i in range (1, len(t)):
@@ -13,8 +11,5 @@ def triInsertion(t):
             comp += 3 # echange
     #print(t)
     return comp
-#t = [randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50)]
-#print(triInsertion(t))
 
-# dans le meilleur des cas 36 au compteur
-# dans le pire des cas 261 au compteur
+print(triInsertion([9,8,7,6,5,4,3,2,1,0]))
