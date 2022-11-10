@@ -24,10 +24,10 @@ def stats(min, max, step, nbr, tri):
     print(f"{i} : {moyenne}")
     
 
-print(stats(10,20,5,10, tri_bulle.tri_bulle_optimise))
+stats(10,20,5,10, tri_bulle.tri_bulle_optimise)
 print("---------------------------------------")
-print(stats(10,20,5,10, tri_bulle.tri_bulle))
+stats(10,20,5,10, tri_bulle.tri_bulle)
 print("---------------------------------------")
-print(stats(10,20,5,10, tri_insertion.triInsertion))
+stats(10,20,5,10, tri_insertion.triInsertion)
 print("---------------------------------------")
-print(stats(10,20,5,10, tri_selection.tri_selection))
+stats(10,20,5,10, tri_selection.tri_selection)
