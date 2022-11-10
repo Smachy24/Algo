@@ -9,7 +9,7 @@ def tri_selection(tab):
         min = j
         compt+=1
     compt+=1
-    if (min != i):
+    if (tab[min] != tab[i]):
       tmp = tab[i]
       tab[i] = tab[min]
       tab[min] = tmp
