@@ -17,4 +17,4 @@ def tri_selection(tab):
   print(tab)
   return compt
 
-print(tri_selection([9,8,7,6,5,4,3,2,1,0]))
+#print(tri_selection([9,8,7,6,5,4,3,2,1,0]))

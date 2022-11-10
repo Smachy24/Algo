@@ -18,6 +18,6 @@ def triInsertion(t):
     return t
 t = [randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50)]
 
-print(triInsertion(t))
+#print(triInsertion(t))
 # dans le meilleur des cas 36 au compteur
 # dans le pire des cas 261 au compteur
