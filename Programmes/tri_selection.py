@@ -14,7 +14,7 @@ def tri_selection(tab):
       tab[i] = tab[min]
       tab[min] = tmp
       compt+=3
-  print(tab)
+  #print(tab)
   return compt
 
 #print(tri_selection([9,8,7,6,5,4,3,2,1,0]))

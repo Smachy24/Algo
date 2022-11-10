@@ -14,9 +14,9 @@ def triInsertion(t):
             j -= 1
             t[j+1] = cle
             comp += 5 
-    print('Voici le nombre de modifications effectuées :', comp)
-    return t
-t = [randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50)]
+    #print('Voici le nombre de modifications effectuées :', comp)
+    return comp
+#t = [randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50), randint(-10, 50)]
 
 #print(triInsertion(t))
 # dans le meilleur des cas 36 au compteur

@@ -13,17 +13,16 @@ def stats(min, max, step, nbr):
   CU:
     step > 0
   """
-  moyenne = 0
   for i in range(min, max+1, step): 
-    tab = []
-
-    for el in range(i): #On ajoute i elements dans le tab
-      tab.append(randint(-10,50))
-    moyenne+=tri_bulle.tri_bulle(tab)
-    print(moyenne)
-  moyenne/=nbr
-  print(moyenne)
+    moyenne=0
+    for j in range(nbr):
+      tab = []
+      for el in range(i): #On ajoute i elements dans le tab
+        tab.append(randint(-10,50))
+      moyenne+=tri_bulle.tri_bulle(tab)
+    moyenne/=nbr
+    print(f"{i} : {moyenne}")
+  
     
 
-
-stats(2,10,2,10)
+print(stats(10,20,5,10))
